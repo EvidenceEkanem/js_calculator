@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>calculator</title>
+</head>
+<script src="cal.js"></script>
+<link rel="stylesheet" href="cal.css">
+<body>
+    <div id="calculator">
+        <!-- Screen and clear key -->
+        <div class="top">
+            <input class="screen ml-5" id="screen" value="" type="text" disabled>
+        </div>
+        
+        <div class="keys" id="keys">
+            <!-- operators and other keys -->
+            
+            <span class="ml-5" onclick="keys('7')">7</span>
+            <span onclick="keys('8')">8</span>
+            <span onclick="keys('9')">9</span>
+            <span class="operator" onclick="keys('+')">+</span>
+            <span class="ml-5" onclick="keys('4')">4</span>
+            <span onclick="keys('5')">5</span>
+            <span onclick="keys('6')">6</span>
+            <span class="operator" onclick="keys('-')">-</span>
+            <span class="ml-5" onclick="keys('1')">1</span>
+            <span onclick="keys('2')">2</span>
+            <span onclick="keys('3')">3</span>
+            <span class="operator" onclick="keys('/')">÷</span>
+            <span class="ml-5" onclick="keys('0')">0</span>
+            <span onclick="keys('.')">.</span>
+            <span onclick="keys('00')">00</span>
+            <span class="operator" onclick="keys('*')">x</span>
+            <span class="operator ml-5" onclick="square()">²</span>
+            <span class="operator" onclick="squareroot()">√</span>
+            <span class="eval" onclick="solve()">=</span>
+            <span class="operator ml-5" onclick="cos()">COS</span>
+            <span class="operator" onclick="sin()">SIN</span>
+            <span class="operator" onclick="tan()">TAN</span>
+            <span class="clear" onclick="clearit()">S/N</span>
+                        
+        </div>
+    </div>
+
+</body>
+</html>
